@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    string a = "";
+    if (User.IsInRole("1"))
+    {
+        a = "estudiante";
+    }
+    else
+    {
+        a = "profesor";
+    }
+    Layout = "~/Views/Shared/Layout_"+a+".cshtml";
+
+}
+
+<h1>Index</h1>
+
